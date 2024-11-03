@@ -13,12 +13,13 @@ const makeChange = (amount) => {
     change.n = Math.floor(amount/5);
     amount %= 5;
     // now rest is the piny
-    change.q = amount;
+    change.p= amount;
 
     return change;
 
   };
   
+//   { q: 1, d: 2, n: 0, p: 2 } 47
   // Do not the change the code below
   const c = prompt("Enter c: ");
   alert(JSON.stringify(makeChange(c)));
